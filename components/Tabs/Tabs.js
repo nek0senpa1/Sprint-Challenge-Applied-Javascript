@@ -13,7 +13,7 @@ class TabLink {
     
     // Check to see if this.tabData is equal to 'all'
     ////document.querySelector(`.tabs-item[data-tab="${this.data}"]`);
-    if(this.tabData= 'all'){
+    if(this.tabData == 'all'){
       // If `all` is true, select all cards regardless of their data attribute values
       
       this.cards = document.querySelectorAll('.card');
@@ -22,7 +22,7 @@ class TabLink {
     } else {
       // else if `all` is false, only select the cards with matching this.tabData values
       //this.cards = this.tabData;
-      this.cards = document.querySelector(`.card[data-tab="${this.tabData}"]`);
+      this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
       //console.log(this.cards);
     }
     
